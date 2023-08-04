@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9f437b-014a-41ea-b7c2-eb5bed30702b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/session/SqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/xqxls/mybatis/test/dao/ISchoolDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xqxls-mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xqxls-mybatis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/binding/MapperProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xqxls/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/xqxls/mybatis/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/xqxls/mybatis/test/ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/xqxls/mybatis/test/ApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/xqxls/mybatis/test/ApiTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xqxls/mybatis/binding/MapperProxyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/xqxls/mybatis/test/ApiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/xqxls/mybatis/test/dao/IUserDao.class" beforeDir="false" />
     </list>
     <list id="0f044085-fbd3-43ff-a47f-d20c884a8d09" name="Revert &quot;创建简单的映射器代理工厂&quot;" comment="Revert &quot;创建简单的映射器代理工厂&quot;&#10;&#10;This reverts commit bcc941e0" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +124,7 @@
       <updated>1691053617907</updated>
       <workItem from="1691053622207" duration="1040000" />
       <workItem from="1691054668975" duration="394000" />
-      <workItem from="1691127345055" duration="3675000" />
+      <workItem from="1691127345055" duration="4440000" />
     </task>
     <task id="LOCAL-00001" summary="创建简单的映射器代理工厂">
       <created>1691054455584</created>
@@ -158,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691054942832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="实现映射器的注册和使用">
+      <created>1691131381252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691131381252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,37 +236,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建简单的映射器代理工厂" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建简单的映射器代理工厂" />
+    <MESSAGE value="实现映射器的注册和使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现映射器的注册和使用" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2141" y="-208" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691130163599">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
     <state x="2141" y="-208" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130163599" />
-    <state x="2161" y="-240" key="CommitChangelistDialog2" timestamp="1691054942719">
+    <state x="2161" y="-240" key="CommitChangelistDialog2" timestamp="1691133701580">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state x="2161" y="-240" key="CommitChangelistDialog2/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691054942719" />
+    <state x="2161" y="-240" key="CommitChangelistDialog2/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691133701580" />
     <state width="484" height="466" key="DebuggerActiveHint" timestamp="1691130295727">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
     <state width="484" height="466" key="DebuggerActiveHint/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130295727" />
-    <state width="2220" height="427" key="GridCell.Tab.0.bottom" timestamp="1691130458743">
+    <state width="2220" height="347" key="GridCell.Tab.0.bottom" timestamp="1691131416421">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state width="2220" height="427" key="GridCell.Tab.0.bottom/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130458743" />
-    <state width="2220" height="427" key="GridCell.Tab.0.center" timestamp="1691130458743">
+    <state width="2220" height="347" key="GridCell.Tab.0.bottom/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691131416421" />
+    <state width="2220" height="347" key="GridCell.Tab.0.center" timestamp="1691131416420">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state width="2220" height="427" key="GridCell.Tab.0.center/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130458743" />
-    <state width="2220" height="427" key="GridCell.Tab.0.left" timestamp="1691130458742">
+    <state width="2220" height="347" key="GridCell.Tab.0.center/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691131416420" />
+    <state width="2220" height="347" key="GridCell.Tab.0.left" timestamp="1691131416419">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state width="2220" height="427" key="GridCell.Tab.0.left/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130458742" />
-    <state width="2220" height="427" key="GridCell.Tab.0.right" timestamp="1691130458743">
+    <state width="2220" height="347" key="GridCell.Tab.0.left/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691131416419" />
+    <state width="2220" height="347" key="GridCell.Tab.0.right" timestamp="1691131416420">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state width="2220" height="427" key="GridCell.Tab.0.right/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691130458743" />
+    <state width="2220" height="347" key="GridCell.Tab.0.right/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691131416420" />
     <state width="2220" height="427" key="GridCell.Tab.1.bottom" timestamp="1691130458744">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
@@ -291,14 +288,18 @@
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
     <state x="2198" y="-340" key="SettingsEditor/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691129656059" />
-    <state x="2310" y="-182" key="Vcs.Push.Dialog.v2" timestamp="1691055059617">
+    <state x="2310" y="-182" key="Vcs.Push.Dialog.v2" timestamp="1691131389633">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
-    <state x="2310" y="-182" key="Vcs.Push.Dialog.v2/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691055059617" />
+    <state x="2310" y="-182" key="Vcs.Push.Dialog.v2/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691131389633" />
     <state x="2499" y="2" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1691129095481">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
     <state x="2499" y="2" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691129095481" />
+    <state x="2422" y="-156" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691133683316">
+      <screen x="1440" y="-515" width="2560" height="1415" />
+    </state>
+    <state x="2422" y="-156" key="git4idea.branch.GitSmartOperationDialog/0.25.1440.798/1440.-515.2560.1415@1440.-515.2560.1415" timestamp="1691133683316" />
     <state x="2419" y="-123" key="git4idea.merge.GitPullDialog" timestamp="1691054529260">
       <screen x="1440" y="-515" width="2560" height="1415" />
     </state>
