@@ -1,6 +1,7 @@
 package cn.xqxls.mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
+import cn.xqxls.mybatis.session.Configuration;
 import cn.xqxls.mybatis.session.SqlSession;
 
 import java.util.HashMap;
@@ -13,6 +14,12 @@ import java.util.Set;
  * @Description
  */
 public class MapperRegistry {
+
+    private Configuration config;
+
+    public MapperRegistry(Configuration config) {
+        this.config = config;
+    }
 
     /**
      * 将已添加的映射器代理加入到 HashMap
