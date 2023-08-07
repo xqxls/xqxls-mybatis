@@ -1,6 +1,8 @@
 package cn.xqxls.mybatis.test.dao;
 
 
+import cn.xqxls.mybatis.test.po.User;
+
 /**
  * @author xqxls
  * @create 2023-08-03 17:11
@@ -8,5 +10,5 @@ package cn.xqxls.mybatis.test.dao;
  */
 public interface IUserDao {
 
-    String queryUserInfoById(String uId);
+    User queryUserInfoById(Long uId);
 }

@@ -1,6 +1,7 @@
 package cn.xqxls.mybatis.builder;
 
 import cn.xqxls.mybatis.session.Configuration;
+import cn.xqxls.mybatis.type.TypeAliasRegistry;
 
 /**
  * @author xqxls
@@ -10,9 +11,11 @@ import cn.xqxls.mybatis.session.Configuration;
 public abstract class BaseBuilder {
 
     protected final Configuration configuration;
+    protected final TypeAliasRegistry typeAliasRegistry;
 
     public BaseBuilder(Configuration configuration) {
         this.configuration = configuration;
+        this.typeAliasRegistry = this.configuration.getTypeAliasRegistry();
     }
 
     public Configuration getConfiguration() {

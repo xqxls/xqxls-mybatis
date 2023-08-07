@@ -1,14 +1,20 @@
 package cn.xqxls.mybatis.test.po;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class User {
 
     private Long id;
-    private String userId;          // 用户ID
-    private String userHead;        // 头像
-    private Date createTime;        // 创建时间
-    private Date updateTime;        // 更新时间
+    // 用户ID
+    private String userId;
+    // 用户名称
+    private String userName;
+    // 头像
+    private String userHead;
+    // 创建时间
+    private LocalDateTime createTime;
+    // 更新时间
+    private LocalDateTime updateTime;
 
     public Long getId() {
         return id;
@@ -26,6 +32,14 @@ public class User {
         this.userId = userId;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public String getUserHead() {
         return userHead;
     }
@@ -34,19 +48,19 @@ public class User {
         this.userHead = userHead;
     }
 
-    public Date getCreateTime() {
+    public LocalDateTime getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
+    public LocalDateTime getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(LocalDateTime updateTime) {
         this.updateTime = updateTime;
     }
 }
