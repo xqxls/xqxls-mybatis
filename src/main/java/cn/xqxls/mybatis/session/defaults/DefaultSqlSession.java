@@ -8,7 +8,9 @@ import cn.xqxls.mybatis.session.SqlSession;
 
 import java.lang.reflect.Method;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,7 +70,8 @@ public class DefaultSqlSession implements SqlSession {
                     String setMethod = "set" + columnName.substring(0, 1).toUpperCase() + columnName.substring(1);
                     Method method;
                     if (value instanceof Timestamp) {
-                        method = clazz.getMethod(setMethod, Date.class);
+                        value = ((Timestamp) value).toLocalDateTime();
+                        method = clazz.getMethod(setMethod, LocalDateTime.class);
                     } else {
                         method = clazz.getMethod(setMethod, value.getClass());
                     }
