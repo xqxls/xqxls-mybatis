@@ -2,6 +2,8 @@ package cn.xqxls.mybatis.session;
 
 import cn.xqxls.mybatis.binding.MapperRegistry;
 import cn.xqxls.mybatis.datasource.druid.DruidDataSourceFactory;
+import cn.xqxls.mybatis.datasource.pooled.PooledDataSourceFactory;
+import cn.xqxls.mybatis.datasource.unpooled.UnpooledDataSourceFactory;
 import cn.xqxls.mybatis.mapping.Environment;
 import cn.xqxls.mybatis.mapping.MappedStatement;
 import cn.xqxls.mybatis.transaction.jdbc.JdbcTransactionFactory;
@@ -40,6 +42,8 @@ public class Configuration {
     public Configuration() {
         typeAliasRegistry.registerAlias("JDBC", JdbcTransactionFactory.class);
         typeAliasRegistry.registerAlias("DRUID", DruidDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("UNPOOLED", UnpooledDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("POOLED", PooledDataSourceFactory.class);
     }
 
     public void addMappers(String packageName) {
