@@ -1,6 +1,5 @@
 package cn.xqxls.mybatis.test;
 
-import cn.xqxls.mybatis.datasource.pooled.PooledDataSource;
 import cn.xqxls.mybatis.io.Resources;
 import cn.xqxls.mybatis.session.SqlSession;
 import cn.xqxls.mybatis.session.SqlSessionFactory;
@@ -41,20 +40,5 @@ public class ApiTest {
         logger.info("测试结果：{}", JSON.toJSONString(user));
     }
 
-    @Test
-    public void test_pooled() throws SQLException, InterruptedException {
-        PooledDataSource pooledDataSource = new PooledDataSource();
-        pooledDataSource.setDriver("com.mysql.jdbc.Driver");
-        pooledDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/mybatis?useUnicode=true");
-        pooledDataSource.setUsername("root");
-        pooledDataSource.setPassword("429006huzhuo");
-        // 持续获得链接
-        while (true){
-            Connection connection = pooledDataSource.getConnection();
-            System.out.println(connection);
-            Thread.sleep(1000);
-            connection.close();
-        }
-    }
 
 }
